@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -O3 -DNDEBUG   -shared -Wl,-soname,libcudbn.so -o libcudbn.so   -L/home/huanglei/torch/install/lib  -L/lib64 /usr/local/cuda-8.0/lib64/libcudart.so -Wl,-rpath,/home/huanglei/torch/install/lib:/lib64:/usr/local/cuda-8.0/lib64::::::::::::::: 

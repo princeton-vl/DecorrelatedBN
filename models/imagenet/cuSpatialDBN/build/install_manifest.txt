@@ -1,0 +1,8 @@
+/home/huanglei/torch/install/lib/luarocks/rocks/cudbn/1.0-0/lib/libcudbn.so
+/home/huanglei/torch/install/lib/luarocks/rocks/cudbn/1.0-0/lua/cudbn/Spatial_NormGradient.lua
+/home/huanglei/torch/install/lib/luarocks/rocks/cudbn/1.0-0/lua/cudbn/Spatial_NG_UNIT.lua
+/home/huanglei/torch/install/lib/luarocks/rocks/cudbn/1.0-0/lua/cudbn/init.lua
+/home/huanglei/torch/install/lib/luarocks/rocks/cudbn/1.0-0/lua/cudbn/Spatial_Weight_DBN_Row.lua
+/home/huanglei/torch/install/lib/luarocks/rocks/cudbn/1.0-0/lua/cudbn/Spatial_DBN_opt.lua
+/home/huanglei/torch/install/lib/luarocks/rocks/cudbn/1.0-0/lua/cudbn/Spatial_PN.lua
+/home/huanglei/torch/install/lib/luarocks/rocks/cudbn/1.0-0/lua/cudbn/Spatial_SVD_Group.lua
