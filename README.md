@@ -1,4 +1,4 @@
-Orthogonal Weight Normalization
+Decorrelated Batch Normalization
 ======================================
 ## Requirements and Dependency
 * Install [Torch](http://torch.ch) with CUDA GPU
@@ -10,24 +10,44 @@ luarocks install optnet
 
 ## Experiments in the paper
 
-#### 1.  Reproduce the results for sovling OMSDM problem:
-
+#### 1.  Reproduce the results to show PCA whitening not work:
+    
 *	Run script:: 
 ```Bash
- bash 0_execute_MLP_MNIST_b1024.sh
+   bash execute_MLP_0debug_MNIST.sh
  ```
-This script will download MNIST dataset automatically.
-You can try more small learning rate, and add more layer, or use different batch size based on this script.
+This script will download MNIST dataset automatically. The results will be saved at 'set_result/MLP/' directory. 
 	
 #### 2. Reproduce the results on MLP architecture:
+
+##### (1).FIM experiments on YaleB dataset 
+
+* Dataset preparations: you should download the [YaleB dataset](https://www.dropbox.com/sh/5pkrtv02wemqxzp/AADlVOs3vDMOEsOpRFa20Uqha?dl=0), and put the data file in the directory: './dataset/'
+
+* execute:
+
+```Bash
+bash execute_MLP_1FIM_YaleB_best.sh
+ ```
+The results will be saved at  'set_result/MLP/' directory. Note that one can get the results by different hyper-parameters configurations by running scripts: 'execute_MLP_1FIM_YaleB_HyperP.sh' and 'execute_MLP_1FIM_YaleB_HyperP_nnn.sh'. 
+
+##### (2). Experiments on PIE dataset 
+
 * Dataset preparations: you should download the [PIE dataset](https://www.dropbox.com/sh/5pkrtv02wemqxzp/AADlVOs3vDMOEsOpRFa20Uqha?dl=0), and put the data file in the directory: './dataset/'
 
-* Execute:
+* For the effects of group size, execute:
+
 ```Bash
-  bash 1_execute_MLP_PIE_sgd.sh   
-  bash 1_execute_MLP_PIE_adam.sh
+bash execute_MLP_2PIE_DBNGroup.sh
  ```
------------------------------Note that the experiment above is under MLP and run on CPU, and therefore it is not necessary to install Magga for above experiemnt --------------------
+
+* For the performances of different baselines, execute:
+
+```Bash
+ bash execute_MLP_2PIE.sh
+ bash execute_MLP_2PIE_nnn.sh
+ ```
+-----------------------------Note that the experiment above is under MLP and run on CPU, and therefore it is not necessary to install Magga for above experiment --------------------
  
 #### 3. Reproduce the results on VGG style, BN-Incption and Wide residual network over CIFAR datset: 
 
