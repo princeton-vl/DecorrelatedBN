@@ -1,35 +1,39 @@
 Decorrelated Batch Normalization
 ======================================
 ## Requirements and Dependency
-* Install [Torch](http://torch.ch) with CUDA GPU
+* Install [Torch](http://torch.ch) with CUDA (for GPU)
 * Install [cudnn v5](http://torch.ch)
-* Install dependent lua packages optnet by run:
+* Install dependent lua packages optnet by:
+```Bash
 luarocks install optnet
-* Install Magga (you can follow the instruction in the file  ['Install Magga.txt'](./Install_Magga.txt) )
+ ```
+* Install Magga (you can follow the instruction in the file  ['Install Magga.txt'](./Install_Magga.txt) ). 
 	Note: Magga is used for the SVD on GPU. If you don't install Magga, you can not run the code on GPU (For all the experiment on CNNs, we run the experiment on GPU)
 
 ## Experiments in the paper
 
 #### 1.  Reproduce the results to show PCA whitening not work:
     
-*	execute script: 
+*	Execute script: 
 ```Bash
    bash execute_MLP_0debug_MNIST.sh
  ```
-This script will download MNIST dataset automatically. The results will be saved at 'set_result/MLP/' directory. 
+This script will download MNIST dataset automatically. The results will be saved at the  directory: 'set_result/MLP/'. 
 	
 #### 2. Reproduce the results on MLP architecture:
 
-##### (1).FIM experiments on YaleB dataset 
+##### (1). FIM experiments on YaleB dataset 
 
-* Dataset preparations: you should download the [YaleB dataset](https://www.dropbox.com/sh/5pkrtv02wemqxzp/AADlVOs3vDMOEsOpRFa20Uqha?dl=0), and put the data file in the directory: './dataset/'
+* Dataset preparation: you should download the [YaleB dataset](https://www.dropbox.com/sh/5pkrtv02wemqxzp/AADlVOs3vDMOEsOpRFa20Uqha?dl=0), and put the data file in the directory: './dataset/'
 
-* execute:
+* Execute:
 
 ```Bash
 bash execute_MLP_1FIM_YaleB_best.sh
  ```
-The results will be saved at  'set_result/MLP/' directory. Note that one can get the results by different hyper-parameters configurations by running scripts: 'execute_MLP_1FIM_YaleB_HyperP.sh' and 'execute_MLP_1FIM_YaleB_HyperP_nnn.sh'. 
+The results will be saved at directory:  'set_result/MLP/'. 
+
+Note that one can get the results by different hyper-parameters configurations by running scripts: 'execute_MLP_1FIM_YaleB_HyperP.sh' and 'execute_MLP_1FIM_YaleB_HyperP_nnn.sh'. 
 
 ##### (2). Experiments on PIE dataset 
 
