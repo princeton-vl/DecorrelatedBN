@@ -7,8 +7,8 @@ Decorrelated Batch Normalization
 ```Bash
 luarocks install optnet
  ```
-* Install Magga (you can follow the instruction in the file  ['Install Magga.txt'](./Install_Magga.txt) ). 
-	Note: Magga is used for the SVD on GPU. If you don't install Magga, you can not run the code on GPU (For all the experiment on CNNs, we run the experiment on GPU)
+* Install Magma (you can follow the instruction in the file  ['Install Magma.txt'](./Install_Magma.txt) ). 
+	Note: Magma is used for the SVD on GPU. If you don't install Magma, you can not run the code on GPU (For all the experiment on CNNs, we run the experiment on GPU)
 
 ## Experiments in the paper
 
