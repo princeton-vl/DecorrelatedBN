@@ -51,7 +51,7 @@ bash execute_MLP_2PIE_DBNGroup.sh
  bash execute_MLP_2PIE.sh
  bash execute_MLP_2PIE_nnn.sh
  ```
------------------------------Note that the experiment above is under MLP and run on CPU, and therefore it is not necessary to install Magga for above experiment --------------------
+-----------------------------Note that the experiment above is under MLP and run on CPU, and therefore it is not necessary to install Magma for above experiment --------------------
  
 #### 3. Reproduce the results on VGG-A architecture over CIFAR-10 datset: 
  *	Dataset preparations: you should follow the CIFAR-10 dataset pre-process as in this [project](https://github.com/szagoruyko/cifar.torch) ,which will generate a pre-processed dataset of 1400 Mb file. Put the cifar_provider.t7 file in the  directory: './dataset/'
