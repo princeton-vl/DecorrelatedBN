@@ -24,7 +24,7 @@ This script will download MNIST dataset automatically. The results will be saved
 
 ##### (1). FIM experiments on YaleB dataset 
 
-* Dataset preparation: you should download the [YaleB dataset](https://www.dropbox.com/sh/5pkrtv02wemqxzp/AADlVOs3vDMOEsOpRFa20Uqha?dl=0), and put the data file in the directory: './dataset/'
+* Dataset preparation: you should download the [YaleB dataset](https://www.dropbox.com/s/taw9mlsq29eqv82/YaleB_Torch.zip?dl=0), and put the data file in the directory: './dataset/'
 
 * Execute:
 
