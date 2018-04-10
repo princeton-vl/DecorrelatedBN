@@ -18,13 +18,13 @@ luarocks install optnet
 ```Bash
    bash execute_MLP_0debug_MNIST.sh
  ```
-This script will download MNIST dataset automatically. The results will be saved at the  directory: 'set_result/MLP/'. 
+This script will download MNIST dataset automatically and you should put the 'mnist.t7'(directory) to the './dataset/' directory. The results will be saved at the  directory: 'set_result/MLP/'. 
 	
 #### 2. Reproduce the results on MLP architecture:
 
 ##### (1). FIM experiments on YaleB dataset 
 
-* Dataset preparation: you should download the [YaleB dataset](https://www.dropbox.com/s/taw9mlsq29eqv82/YaleB_Torch.zip?dl=0), and put the data file in the directory: './dataset/'
+* Dataset preparation: you should download the [YaleB dataset](https://www.dropbox.com/s/taw9mlsq29eqv82/YaleB_Torch.zip?dl=0), and put the data files in the directory: './dataset/' (The final paths of the data files are:'./dataset/YaleB/YaleB_train.dat' and './dataset/YaleB/YaleB_test.dat')
 
 * Execute:
 
@@ -37,7 +37,7 @@ Note that one can get the results by different hyper-parameters configurations b
 
 ##### (2). Experiments on PIE dataset 
 
-* Dataset preparations: you should download the [PIE dataset](https://www.dropbox.com/sh/5pkrtv02wemqxzp/AADlVOs3vDMOEsOpRFa20Uqha?dl=0), and put the data file in the directory: './dataset/'
+* Dataset preparations: you should download the [PIE dataset](https://www.dropbox.com/sh/5pkrtv02wemqxzp/AADlVOs3vDMOEsOpRFa20Uqha?dl=0), and put the data file in the directory: './dataset/' (The final paths of the data files are:'./dataset/PIE/PIE_train.dat' and './dataset/PIE/PIE_test.dat')
 
 * For the effects of group size, execute:
 
