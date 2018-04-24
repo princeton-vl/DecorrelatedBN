@@ -1,5 +1,12 @@
 Decorrelated Batch Normalization
 ======================================
+Code for reproducing the results in the following paper:
+
+**Decorrelated Batch Normalization**  
+Lei Huang, Dawei Yang, Bo Lang, Jia Deng  
+*IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2018.*
+[arXiv:1804.08450](https://arxiv.org/abs/1804.08450)
+
 ## Requirements and Dependency
 * Install [Torch](http://torch.ch) with CUDA (for GPU)
 * Install [cudnn v5](http://torch.ch)
