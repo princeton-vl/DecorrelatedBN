@@ -24,7 +24,7 @@ luarocks install optnet
     
 *	Run:
 ```Bash
-   bash execute_MLP_0debug_MNIST.sh
+bash execute_MLP_0debug_MNIST.sh
  ```
 This script will download MNIST automatically and you should put the `mnist.t7/` under `./dataset/`. The experiment results will be saved at `./set_result/MLP/`.
 	
