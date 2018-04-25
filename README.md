@@ -9,7 +9,7 @@ Lei Huang, Dawei Yang, Bo Lang, Jia Deng
 [arXiv:1804.08450](https://arxiv.org/abs/1804.08450)
 
 ## Requirements and Dependency
-* Install MAGMA (you can find the instructions in  ['Install MAGMA.txt'](./Install_MAGMA.txt) ). 
+* Install MAGMA (you can find the instructions in  ['Install MAGMA.md'](./Install_MAGMA.md) ). 
 Note: MAGMA is required for SVD on GPU. Without MAGMA, you can run the code on CPU only, while all the CNN experiments in the paper are run on GPU.
 * Install [Torch](http://torch.ch) with CUDA (for GPU). Note that `cutorch` should be compiled with MAGMA support if you have installed MAGMA and set the environments correctly.
 * Install [cudnn v5](http://torch.ch).
