@@ -55,7 +55,7 @@ bash execute_MLP_2PIE_DBNGroup.sh
  bash execute_MLP_2PIE_nnn.sh
  ```
  
-Note that the experiments until this point can run on CPU, so MAGMA is not needed in above experiments.
+Note that the experiments until this point can be run on CPU, so MAGMA is not needed in above experiments.
 
  --------------------
  
