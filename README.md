@@ -95,7 +95,7 @@ bash execute_Conv_3residual_wide_Cifar10_wr_DBN_scale_L1_d28_h48_g16_b128_dr0.3_
  *  Clone Facebook's ResNet repo [here](https://github.com/facebook/fb.resnet.torch).
  *  Download ImageNet and put it in: `/tmp/dataset/ImageNet/` (you can also customize the path in `opts.lua`)
  *  Install the DBN module to Torch as a Lua package: go to the directory `./models/imagenet/cuSpatialDBN/` and run  `luarocks make cudbn-1.0-0.rockspec`.
-  * Copy the model definitions in `./models/imagenet/` (`resnet_BN.lua`, `resnet_DBN_scale_L1.lua` and `init.lua`) to `./models` directory in the cloned repo `fb.resnet.torch`, for reproducing the results reported in the paper. you also can compare the pre-activation version of residual networks introduced in the [paper](https://arxiv.org/abs/1603.05027) (using the model files 
+  * Copy the model definitions in `./models/imagenet/` (`resnet_BN.lua`, `resnet_DBN_scale_L1.lua` and `init.lua`) to `./models` directory in the cloned repo `fb.resnet.torch`, for reproducing the results reported in the paper. You also can compare the pre-activation version of residual networks introduced in the [paper](https://arxiv.org/abs/1603.05027) (using the model files 
   `preresnet_BN.lua` and `preresnet_DBN_scale_L1.lua`).  
  * Use the default configuration and our models to run experiments.
 
